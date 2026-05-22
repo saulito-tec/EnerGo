@@ -4,192 +4,131 @@ import "../styles/global.css";
 
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-        <title>Aethera — Beyond silence, we build the eternal.</title>
-    </head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>Aethera — Beyond silence, we build the eternal.</title>
+  </head>
 
-    <body class="bg-white">
-        <!-- ── Root container ─────────────────────────────────── -->
-        <div class="relative min-h-screen w-full overflow-hidden">
-            <!-- ── Video background layer (z-0) ─────────────────── -->
-            <div
-                class="absolute z-0"
-                style="top: 300px; right: 0; bottom: 0; left: 0;"
-            >
-                <video
-                    id="bg-video"
-                    class="w-full h-full object-cover opacity-0"
-                    src="https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260328_083109_283f3553-e28f-428b-a723-d639c617eb2b.mp4"
-                    muted
-                    playsinline
-                    preload="auto"></video>
+  <body class="bg-white">
+    <!-- ── Root container ─────────────────────────────────── -->
+    <div class="relative min-h-screen w-full overflow-hidden">
+      <!-- ── Image background layer (z-0) ──────────────────── -->
+      <div
+        class="absolute z-0"
+        style="top: 300px; right: 0; bottom: 0; left: 0;"
+      >
+        <img
+          src="/enq-1998-EZ4EhVmyJFM-unsplash.jpg"
+          class="w-full h-full object-cover"
+          alt=""
+          aria-hidden="true"
+        />
 
-                <!-- Gradient overlay: fades video into background at top and bottom -->
-                <div
-                    class="absolute inset-0 bg-linear-to-b from-white via-transparent to-white pointer-events-none"
-                >
-                </div>
-            </div>
-
-            <!-- ── Navigation bar (z-10) ──────────────────────────── -->
-            <nav class="relative z-10">
-                <div
-                    class="max-w-7xl mx-auto flex items-center justify-between px-8 py-6"
-                >
-                    <!-- Logo -->
-                    <a
-                        href="/"
-                        class="font-serif text-3xl tracking-tight text-black leading-none select-none"
-                    >
-                        Aethera<sup class="text-sm align-super">®</sup>
-                    </a>
-
-                    <!-- Menu items (hidden on mobile) -->
-                    <ul
-                        class="hidden md:flex items-center gap-8 font-sans text-sm"
-                    >
-                        <li>
-                            <a
-                                href="#"
-                                class="text-black transition-colors duration-200 hover:text-[#6F6F6F]"
-                            >
-                                Home
-                            </a>
-                        </li>
-                        <li>
-                            <a
-                                href="#"
-                                class="text-[#6F6F6F] transition-colors duration-200 hover:text-black"
-                            >
-                                Studio
-                            </a>
-                        </li>
-                        <li>
-                            <a
-                                href="#"
-                                class="text-[#6F6F6F] transition-colors duration-200 hover:text-black"
-                            >
-                                About
-                            </a>
-                        </li>
-                        <li>
-                            <a
-                                href="#"
-                                class="text-[#6F6F6F] transition-colors duration-200 hover:text-black"
-                            >
-                                Journal
-                            </a>
-                        </li>
-                        <li>
-                            <a
-                                href="#"
-                                class="text-[#6F6F6F] transition-colors duration-200 hover:text-black"
-                            >
-                                Reach Us
-                            </a>
-                        </li>
-                    </ul>
-
-                    <!-- CTA button -->
-                    <button
-                        class="font-sans rounded-full px-6 py-2.5 text-sm bg-black text-white transition-transform duration-200 hover:scale-[1.03] cursor-pointer"
-                    >
-                        Begin Journey
-                    </button>
-                </div>
-            </nav>
-
-            <!-- ── Hero section (z-10) ────────────────────────────── -->
-            <section
-                class="relative z-10 flex flex-col items-center justify-center text-center px-6 pb-40"
-                style="padding-top: calc(8rem - 75px);"
-            >
-                <!-- Headline -->
-                <h1
-                    class="font-serif font-normal text-5xl sm:text-7xl md:text-8xl max-w-7xl text-black animate-fade-rise"
-                    style="line-height: 0.95; letter-spacing: -2.46px;"
-                >
-                    Beyond&nbsp;<em style="color: #6F6F6F;">silence,</em>
-                    &nbsp;we build&nbsp;<em style="color: #6F6F6F;"
-                        >the eternal.</em
-                    >
-                </h1>
-
-                <!-- Description -->
-                <p
-                    class="font-sans text-base sm:text-lg max-w-2xl mt-8 leading-relaxed text-[#6F6F6F] animate-fade-rise-delay"
-                >
-                    Building platforms for brilliant minds, fearless makers, and
-                    thoughtful souls. Through the noise, we craft digital havens
-                    for deep work and pure flows.
-                </p>
-
-                <!-- Hero CTA button -->
-                <button
-                    class="font-sans rounded-full px-14 py-5 text-base mt-12 bg-black text-white transition-transform duration-200 hover:scale-[1.03] cursor-pointer animate-fade-rise-delay-2"
-                >
-                    Begin Journey
-                </button>
-            </section>
+        <!-- Gradient overlay: fades image into background at top and bottom -->
+        <div
+          class="absolute inset-0 bg-linear-to-b from-white via-transparent to-white pointer-events-none"
+        >
         </div>
-    </body>
+      </div>
+
+      <!-- ── Navigation bar (z-10) ──────────────────────────── -->
+      <nav class="relative z-10">
+        <div
+          class="max-w-7xl mx-auto flex items-center justify-between px-8 py-6"
+        >
+          <!-- Logo -->
+          <a
+            href="/"
+            class="font-serif text-3xl tracking-tight text-black leading-none select-none"
+          >
+            Aethera<sup class="text-sm align-super">®</sup>
+          </a>
+
+          <!-- Menu items (hidden on mobile) -->
+          <ul class="hidden md:flex items-center gap-8 font-sans text-sm">
+            <li>
+              <a
+                href="#"
+                class="text-black transition-colors duration-200 hover:text-[#6F6F6F]"
+              >
+                Home
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="text-[#6F6F6F] transition-colors duration-200 hover:text-black"
+              >
+                Studio
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="text-[#6F6F6F] transition-colors duration-200 hover:text-black"
+              >
+                About
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="text-[#6F6F6F] transition-colors duration-200 hover:text-black"
+              >
+                Journal
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="text-[#6F6F6F] transition-colors duration-200 hover:text-black"
+              >
+                Reach Us
+              </a>
+            </li>
+          </ul>
+
+          <!-- CTA button -->
+          <button
+            class="font-sans rounded-full px-6 py-2.5 text-sm bg-black text-white transition-transform duration-200 hover:scale-[1.03] cursor-pointer"
+          >
+            Begin Journey
+          </button>
+        </div>
+      </nav>
+
+      <!-- ── Hero section (z-10) ────────────────────────────── -->
+      <section
+        class="relative z-10 flex flex-col items-center justify-center text-center px-6 pb-40"
+        style="padding-top: calc(8rem - 75px);"
+      >
+        <!-- Headline -->
+        <h1
+          class="font-serif font-normal text-5xl sm:text-7xl md:text-8xl max-w-7xl text-black animate-fade-rise"
+          style="line-height: 0.95; letter-spacing: -2.46px;"
+        >
+          Beyond&nbsp;<em style="color: #6F6F6F;">silence,</em>
+          &nbsp;we build&nbsp;<em style="color: #6F6F6F;">the eternal.</em>
+        </h1>
+
+        <!-- Description -->
+        <p
+          class="font-sans text-base sm:text-lg max-w-2xl mt-200 leading-relaxed text-[#6F6F6F] animate-fade-rise-delay"
+        >
+          Building platforms for brilliant minds, fearless makers, and
+          thoughtful souls. Through the noise, we craft digital havens for deep
+          work and pure flows.
+        </p>
+
+        <!-- Hero CTA button -->
+        <button
+          class="font-sans rounded-full px-14 py-5 text-base mt-12 bg-black text-white transition-transform duration-200 hover:scale-[1.03] cursor-pointer animate-fade-rise-delay-2"
+        >
+          Begin Journey
+        </button>
+      </section>
+    </div>
+  </body>
 </html>
-
-<script>
-    const video = document.getElementById(
-        "bg-video",
-    ) as HTMLVideoElement | null;
-    if (!video) throw new Error("bg-video element not found");
-
-    const FADE_DURATION = 0.5; // seconds
-    let rafId: number;
-
-    // Continuously update video opacity to create fade-in/fade-out at loop boundaries
-    function tick() {
-        const { currentTime, duration } = video!;
-
-        if (duration) {
-            if (currentTime < FADE_DURATION) {
-                // Fade in at the start
-                video!.style.opacity = String(currentTime / FADE_DURATION);
-            } else if (duration - currentTime < FADE_DURATION) {
-                // Fade out near the end
-                video!.style.opacity = String(
-                    (duration - currentTime) / FADE_DURATION,
-                );
-            } else {
-                video!.style.opacity = "1";
-            }
-        }
-
-        rafId = requestAnimationFrame(tick);
-    }
-
-    // On natural end: hide, wait, reset, replay
-    video.addEventListener("ended", () => {
-        video.style.opacity = "0";
-        cancelAnimationFrame(rafId);
-        setTimeout(() => {
-            video.currentTime = 0;
-            video
-                .play()
-                .then(() => {
-                    rafId = requestAnimationFrame(tick);
-                })
-                .catch(() => {});
-        }, 100);
-    });
-
-    // Start playback as soon as the browser has enough data
-    video.addEventListener(
-        "canplay",
-        () => {
-            rafId = requestAnimationFrame(tick);
-            video.play().catch(() => {});
-        },
-        { once: true },
-    );
-</script>
